@@ -9,6 +9,7 @@ const TaskTitleField: React.FC<ITextField> = (
   return (
     <TextField
       id="title"
+      required
       label="Task Title"
       placeholder="Task Title"
       variant="outlined"

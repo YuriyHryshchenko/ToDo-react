@@ -20,18 +20,24 @@ const Sidebar: React.FC = (): React.ReactElement => {
       sm={6}
       xs={12}
       sx={{
-        height: '100vh',
-        position: {
-          sm: 'fixed',
-        },
-        right: 0,
-        top: 0,
         width: '100%',
         backgroundColor: 'background.paper',
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
         alignItems: 'center',
+        position: {
+          sm: 'fixed',
+        },
+        right: {
+          sm: 0,
+        },
+        top: {
+          sm: 0,
+        },
+        height: {
+          sm: '100vh',
+        },
       }}
     >
       <Profile name="Yurii" />

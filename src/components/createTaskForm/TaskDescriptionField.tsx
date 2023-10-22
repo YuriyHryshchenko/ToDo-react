@@ -11,6 +11,7 @@ const TaskDescriptionField: React.FC<ITextField> = (
       id="description"
       name="description"
       label="Description"
+      required
       placeholder="Description"
       variant="outlined"
       size="small"

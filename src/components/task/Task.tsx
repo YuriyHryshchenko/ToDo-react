@@ -16,6 +16,7 @@ const Task: React.FC<ITask> = (
     date = new Date(),
     description = 'Lorem ipsum dolor sit amet',
     priority = Priority.normal,
+    id,
     status = Status.completed,
     onChange = (e) => console.log(e),
     onClick = (e) => console.log(e),
@@ -38,7 +39,12 @@ const Task: React.FC<ITask> = (
     >
       <TaskHeader title={title} date={date} />
       <TaskDescription description={description} />
-      <TaskFooter onChange={onChange} onClick={onClick} />
+      <TaskFooter
+        status={status}
+        id={id}
+        onChange={onChange}
+        onClick={onClick}
+      />
     </Box>
   );
 };
